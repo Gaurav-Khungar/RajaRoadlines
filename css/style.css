@@ -1312,8 +1312,8 @@ body {
 }
 
 .section-sep {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   height: 1px;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
@@ -1326,8 +1326,8 @@ body {
 
 @media (min-width: 1024px) {
   .section-sep {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
