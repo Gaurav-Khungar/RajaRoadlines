@@ -1,10 +1,10 @@
 /* Raja Roadlines — Logo injector
-   Uses the actual logo image from images/logo.png */
+   Uses the SVG logo from images/logo.svg */
 
 document.querySelectorAll('.logo-mark').forEach(el => {
   const size = parseInt(el.dataset.size || 36);
   const img = document.createElement('img');
-  img.src = 'images/logo.png';
+  img.src = 'images/logo.svg';
   img.alt = 'Raja Roadlines';
   img.style.height = size + 'px';
   img.style.width = 'auto';
