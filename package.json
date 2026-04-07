@@ -1,0 +1,8 @@
+{
+  "name": "raja-roadlines-website",
+  "version": "1.0.0",
+  "description": "Raja Roadlines — static website with Netlify contact function",
+  "dependencies": {
+    "nodemailer": "^6.9.9"
+  }
+}
