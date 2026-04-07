@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-bg-base text-fg antialiased;
+  background-color: #050506;
+}
+
+/* Ambient blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  animation: var(--animation);
+}
+
+.blob-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(204,34,34,0.4), transparent);
+  top: 10%;
+  left: 5%;
+  --animation: float1 20s ease-in-out infinite;
+}
+
+.blob-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(204,34,34,0.3), transparent);
+  top: 30%;
+  right: 10%;
+  --animation: float2 24s ease-in-out infinite;
+}
+
+.blob-3 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(204,34,34,0.25), transparent);
+  bottom: 10%;
+  left: 20%;
+  --animation: float3 28s ease-in-out infinite;
+}
+
+.blob-4 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(204,34,34,0.2), transparent);
+  bottom: 20%;
+  right: 5%;
+  --animation: float1 26s ease-in-out infinite;
+}
+
+/* Glass morphism */
+.glass {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
+  @apply rounded-lg;
+}
+
+.glass:hover {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  border-color: rgba(204,34,34,0.3);
+  @apply shadow-card-hover;
+}
+
+/* Text gradients */
+.text-gradient {
+  @apply bg-gradient-to-b from-fg to-fg/80 bg-clip-text text-transparent;
+}
+
+.text-accent-gradient {
+  background: linear-gradient(90deg, #CC2222 0%, #FF6666 100%);
+  @apply bg-clip-text text-transparent;
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(30px, -30px); }
+  50% { transform: translate(-20px, 20px); }
+  75% { transform: translate(20px, 30px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-25px, 25px); }
+  50% { transform: translate(25px, -15px); }
+  75% { transform: translate(-30px, -25px); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(20px, 20px); }
+  50% { transform: translate(-15px, -25px); }
+  75% { transform: translate(25px, 15px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+/* Utility classes */
+.container-max {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-sep {
+  @apply h-px bg-gradient-to-r from-transparent via-border to-transparent my-16 lg:my-24;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-red-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-surface border border-border text-fg rounded-lg font-semibold hover:bg-surface-hover hover:border-accent transition-colors;
+}
+
+.btn-green {
+  @apply px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-colors;
+}
+
+.badge {
+  @apply inline-block px-3 py-1 bg-surface border border-border text-fg text-sm rounded-full;
+}
+
+.label {
+  @apply text-xs font-bold text-accent uppercase tracking-widest;
+}
+
+.divider {
+  @apply w-12 h-1 bg-gradient-to-r from-accent to-accent/0 my-4;
+}
+
+.divider-center {
+  @apply mx-auto;
+}

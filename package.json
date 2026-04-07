@@ -2,7 +2,14 @@
   "name": "raja-roadlines-website",
   "version": "1.0.0",
   "description": "Raja Roadlines — static website with Netlify contact function",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/tailwind.css -o ./css/style.css",
+    "watch:css": "tailwindcss -i ./css/tailwind.css -o ./css/style.css --watch"
+  },
   "dependencies": {
     "nodemailer": "^6.9.9"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }

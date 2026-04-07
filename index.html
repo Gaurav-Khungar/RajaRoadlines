@@ -4,78 +4,109 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raja Roadlines — Leading Transport Contractors, Aurangabad</title>
-  <meta name="description" content="Raja Roadlines — Leading Transport Contractors, Commission Agents & Fleet Owners. Specialist in supply of Canter 608, 407, DCM all over India."/>
+  <meta name="description" content="Raja Roadlines — Leading Transport Contractors, Commission Agents & Fleet Owners. Specialist in ODC, Trailer, Container, Eicher, Part Loads all over India."/>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-<!-- Ambient background layers -->
-<div class="ambient-bg">
+<!-- Ambient blobs background -->
+<div class="fixed inset-0 overflow-hidden pointer-events-none">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
   <div class="blob blob-4"></div>
 </div>
 
-<div class="site-wrapper">
+<div class="relative z-10">
 
 <!-- ── NAV ── -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <div class="nav-logo"><div class="logo-mark" data-size="38"></div></div>
-      <div class="nav-brand-text">
-        <div class="name">RAJA ROADLINES</div>
-        <div class="tag1">Leading Transport Contractors · Commission Agent &amp; Fleet Owners</div>
-        <div class="tag2">ODC · Trailer · Container · Eicher · Part Loads · All Over India</div>
+<nav class="sticky top-0 z-40 backdrop-blur-md border-b border-border bg-bg-base/80">
+  <div class="container-max py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo + Brand -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="logo-mark w-10 h-10 flex-shrink-0" data-size="40"></div>
+        <div class="hidden sm:block">
+          <div class="font-bold text-sm text-fg">RAJA ROADLINES</div>
+          <div class="text-xs text-fg-muted">ODC · Trailer · Container · Eicher</div>
+        </div>
+      </a>
+
+      <!-- Desktop menu -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-fg hover:text-accent transition">Home</a>
+        <a href="services.html" class="text-fg hover:text-accent transition">Services</a>
+        <a href="about.html" class="text-fg hover:text-accent transition">About</a>
+        <a href="coverage.html" class="text-fg hover:text-accent transition">Coverage</a>
+        <a href="contact.html" class="text-fg hover:text-accent transition">Contact</a>
+        <a href="tel:9326055414" class="btn-primary text-sm">📞 9326055414</a>
       </div>
-    </a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="coverage.html">Coverage</a>
-      <a href="contact.html">Contact</a>
-      <a href="tel:9326055414" class="nav-cta">📞 9326055414</a>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <span class="block w-5 h-0.5 bg-fg mb-1.5"></span>
+        <span class="block w-5 h-0.5 bg-fg mb-1.5"></span>
+        <span class="block w-5 h-0.5 bg-fg"></span>
+      </button>
     </div>
-    <div class="hamburger"><span></span><span></span><span></span></div>
-  </div>
-  <div class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="coverage.html">Coverage</a>
-    <a href="contact.html">Contact</a>
-    <a href="tel:9326055414" style="color:var(--accent);font-weight:700;">📞 9326055414</a>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border pt-4 space-y-3">
+      <a href="index.html" class="block text-fg hover:text-accent">Home</a>
+      <a href="services.html" class="block text-fg hover:text-accent">Services</a>
+      <a href="about.html" class="block text-fg hover:text-accent">About</a>
+      <a href="coverage.html" class="block text-fg hover:text-accent">Coverage</a>
+      <a href="contact.html" class="block text-fg hover:text-accent">Contact</a>
+      <a href="tel:9326055414" class="block btn-primary text-center text-sm w-full">📞 Call Now</a>
+    </div>
   </div>
 </nav>
 
 <!-- ── HERO ── -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-badge"><span class="dot"></span> 30+ Years of Trusted Freight</div>
-      <h1><span class="text-gradient">Industrial Transport</span><br><span class="text-accent-gradient">You Can Count On</span></h1>
-      <p>Full-spectrum freight solutions — ODC, trailers, containers, Eicher and part loads. Export, import and residential relocation handled end-to-end from Chhatrapati Sambhajinagar.</p>
-      <div class="hero-btns">
-        <a href="tel:9326055414" class="btn btn-primary">📞 Call Now</a>
-        <a href="https://wa.me/919326055414?text=Hello%2C%20I%20need%20a%20transport%20quote%20from%20Raja%20Roadlines" target="_blank" class="btn btn-green">💬 WhatsApp</a>
-        <a href="contact.html" class="btn btn-secondary">Send Enquiry →</a>
+<section class="relative py-16 md:py-24 lg:py-32 overflow-hidden">
+  <div class="container-max">
+    <div class="max-w-3xl">
+      <!-- Badge -->
+      <div class="inline-block px-3 py-1 bg-surface border border-border rounded-full mb-6 text-sm text-fg-muted">
+        <span class="inline-block w-2 h-2 bg-accent rounded-full mr-2"></span>
+        30+ Years of Trusted Freight
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        <span class="text-gradient">Industrial Transport</span><br>
+        <span class="text-accent-gradient">You Can Count On</span>
+      </h1>
+
+      <!-- Description -->
+      <p class="text-lg text-fg-muted mb-8 max-w-2xl">
+        Full-spectrum freight solutions — ODC, trailers, containers, Eicher and part loads. Export, import and residential relocation handled end-to-end from Chhatrapati Sambhajinagar.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-3 mb-12">
+        <a href="tel:9326055414" class="btn-primary text-center">📞 Call Now</a>
+        <a href="https://wa.me/919326055414?text=Hello%2C%20I%20need%20a%20transport%20quote%20from%20Raja%20Roadlines" target="_blank" class="btn-green text-center">💬 WhatsApp</a>
+        <a href="contact.html" class="btn-secondary text-center">Send Enquiry →</a>
       </div>
 
       <!-- Stats -->
-      <div class="stats-strip">
-        <div class="stat-item">
-          <div class="stat-num red" data-count="30" data-suffix="+">30+</div>
-          <div class="stat-label">Years Experience</div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-accent">30+</div>
+          <div class="text-xs sm:text-sm text-fg-muted">Years Experience</div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num">All India</div>
-          <div class="stat-label">Coverage</div>
+        <div class="text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-fg">All India</div>
+          <div class="text-xs sm:text-sm text-fg-muted">Coverage</div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num">✓</div>
-          <div class="stat-label">GSTIN + Udyam</div>
+        <div class="text-center">
+          <div class="text-xl sm:text-2xl font-bold text-accent">✓</div>
+          <div class="text-xs sm:text-sm text-fg-muted">GSTIN Active</div>
+        </div>
+        <div class="text-center">
+          <div class="text-xl sm:text-2xl font-bold text-accent">✓</div>
+          <div class="text-xs sm:text-sm text-fg-muted">Udyam MSME</div>
         </div>
       </div>
     </div>
@@ -84,75 +115,78 @@
 
 <div class="section-sep"></div>
 
-<!-- ── SERVICES BENTO ── -->
-<section class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="label">What We Do</span>
-      <h2 style="margin-top:8px;"><span class="text-gradient">End-to-end freight,</span><br>handled for you</h2>
+<!-- ── SERVICES ── -->
+<section class="py-16 md:py-24">
+  <div class="container-max">
+    <!-- Section header -->
+    <div class="mb-12 md:mb-16">
+      <div class="label mb-3">What We Do</div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+        <span class="text-gradient">End-to-end freight,</span><br>
+        handled for you
+      </h2>
       <div class="divider"></div>
-      <p>From booking a single truck to managing fleet supply for large industrial loads.</p>
+      <p class="text-fg-muted mt-4">From booking a single truck to managing fleet supply for large industrial loads.</p>
     </div>
 
-    <div class="bento-grid">
-      <!-- Big card — Fleet Supply -->
-      <div class="card bento-1 card-accent fade-up" style="display:flex;flex-direction:column;justify-content:space-between;padding:36px;">
-        <div>
-          <div class="card-icon">🚛</div>
-          <h2 style="margin-top:16px;margin-bottom:12px;"><span class="text-gradient">Full Fleet Supply</span></h2>
-          <p style="font-size:15px;max-width:400px;">From ODC flatbeds and multi-axle trailers to refrigerated containers and Eicher trucks — we source the exact vehicle your cargo needs, fast. Even at peak month-end demand.</p>
-        </div>
-        <div style="display:flex;gap:10px;margin-top:28px;flex-wrap:wrap;">
-          <span class="tag">ODC</span>
-          <span class="tag">Trailer</span>
-          <span class="tag">Container</span>
-          <span class="tag">Eicher</span>
-          <span class="tag">Part Load</span>
+    <!-- Service cards grid - mobile first -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Full Fleet Supply - featured -->
+      <div class="lg:col-span-2 glass p-6 md:p-8">
+        <div class="text-3xl mb-4">🚛</div>
+        <h3 class="text-2xl font-bold mb-3"><span class="text-gradient">Full Fleet Supply</span></h3>
+        <p class="text-fg-muted mb-6">From ODC flatbeds and multi-axle trailers to refrigerated containers and Eicher trucks — we source the exact vehicle your cargo needs, fast. Even at peak month-end demand.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge">ODC</span>
+          <span class="badge">Trailer</span>
+          <span class="badge">Container</span>
+          <span class="badge">Eicher</span>
+          <span class="badge">Part Load</span>
         </div>
       </div>
 
-      <!-- Part Loads -->
-      <div class="card bento-2 fade-up">
-        <div class="card-icon">📦</div>
-        <h3 style="margin-top:12px;margin-bottom:8px;">Part Load Freight</h3>
-        <p style="font-size:13px;">Don't pay for a full truck when you don't need one. We consolidate part loads efficiently across all major routes.</p>
+      <!-- Part Load Freight -->
+      <div class="glass p-6">
+        <div class="text-3xl mb-3">📦</div>
+        <h4 class="font-bold mb-2">Part Load Freight</h4>
+        <p class="text-sm text-fg-muted">Don't pay for a full truck when you don't need one. We consolidate part loads efficiently across all major routes.</p>
       </div>
 
       <!-- Industrial Cargo -->
-      <div class="card bento-3 fade-up">
-        <div class="card-icon">🏭</div>
-        <h3 style="margin-top:12px;margin-bottom:8px;">Industrial Cargo</h3>
-        <p style="font-size:13px;">Aluminium scrap, rubber rolls, paper reels and heavy industrial materials handled with care.</p>
+      <div class="glass p-6">
+        <div class="text-3xl mb-3">🏭</div>
+        <h4 class="font-bold mb-2">Industrial Cargo</h4>
+        <p class="text-sm text-fg-muted">Aluminium scrap, rubber rolls, paper reels and heavy industrial materials handled with care.</p>
       </div>
 
-      <!-- Export Logistics -->
-      <div class="card bento-4 fade-up" style="display:flex;flex-direction:column;justify-content:space-between;">
+      <!-- Export -->
+      <div class="glass p-6 flex flex-col justify-between">
         <div>
-          <div class="card-icon">🌏</div>
-          <h3 style="margin-top:12px;margin-bottom:8px;">Export Freight Solutions</h3>
-          <p style="font-size:13px;">First-mile to port. We coordinate vehicles for export cargo to JNPT, Nhava Sheva and Gujarat ports.</p>
+          <div class="text-3xl mb-3">🌏</div>
+          <h4 class="font-bold mb-2">Export Freight Solutions</h4>
+          <p class="text-sm text-fg-muted">First-mile to port. We coordinate vehicles for export cargo to JNPT, Nhava Sheva and Gujarat ports.</p>
         </div>
-        <a href="services.html" style="color:var(--accent);font-size:13px;font-weight:600;margin-top:16px;display:block;">Learn more →</a>
+        <a href="services.html" class="text-accent text-sm font-semibold mt-4 inline-block hover:text-red-400">Learn more →</a>
       </div>
 
-      <!-- Import Logistics -->
-      <div class="card bento-5 fade-up" style="display:flex;flex-direction:column;justify-content:space-between;">
+      <!-- Import -->
+      <div class="glass p-6 flex flex-col justify-between">
         <div>
-          <div class="card-icon">🚢</div>
-          <h3 style="margin-top:12px;margin-bottom:8px;">Import Cargo Solutions</h3>
-          <p style="font-size:13px;">Last-mile from port to your factory or warehouse. Containers, ODC and special cargo moved with precision.</p>
+          <div class="text-3xl mb-3">🚢</div>
+          <h4 class="font-bold mb-2">Import Cargo Solutions</h4>
+          <p class="text-sm text-fg-muted">Last-mile from port to your factory or warehouse. Containers, ODC and special cargo moved with precision.</p>
         </div>
-        <a href="services.html" style="color:var(--accent);font-size:13px;font-weight:600;margin-top:16px;display:block;">Learn more →</a>
+        <a href="services.html" class="text-accent text-sm font-semibold mt-4 inline-block hover:text-red-400">Learn more →</a>
       </div>
 
-      <!-- Residential Relocation -->
-      <div class="card bento-6 fade-up" style="display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(135deg,rgba(204,34,34,0.10),rgba(255,255,255,0.02));">
+      <!-- Residential -->
+      <div class="glass p-6 bg-gradient-to-br from-surface to-bg-dark flex flex-col justify-between">
         <div>
-          <div class="card-icon">🏠</div>
-          <h3 style="margin-top:12px;margin-bottom:8px;">Residential Relocation</h3>
-          <p style="font-size:13px;">Premium end-to-end home transition services — your household belongings moved with the same accountability we bring to industrial freight.</p>
+          <div class="text-3xl mb-3">🏠</div>
+          <h4 class="font-bold mb-2">Residential Relocation</h4>
+          <p class="text-sm text-fg-muted">Premium end-to-end home transition services — your household belongings moved with the same accountability we bring to industrial freight.</p>
         </div>
-        <a href="services.html" style="color:var(--accent);font-size:13px;font-weight:600;margin-top:16px;display:block;">Learn more →</a>
+        <a href="services.html" class="text-accent text-sm font-semibold mt-4 inline-block hover:text-red-400">Learn more →</a>
       </div>
     </div>
   </div>
@@ -161,72 +195,49 @@
 <div class="section-sep"></div>
 
 <!-- ── WHY US ── -->
-<section class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="label">Why Raja Roadlines</span>
-      <h2 style="margin-top:8px;"><span class="text-gradient">Three decades of</span><br>reliability</h2>
-      <div class="divider"></div>
-      <p>A trusted name in Maharashtra's freight industry since the 1990s.</p>
-    </div>
-    <div class="client-strip fade-up">
-      <span class="client-strip-label">Freight moved for</span>
-      <span class="client-pill">Siemens</span>
-      <span class="client-pill">Colgate</span>
-      <span class="client-pill">Johnson &amp; Johnson</span>
-      <span class="client-pill">Hindustan Unilever</span>
-      <span class="client-pill">Bisleri</span>
+<section class="py-16 md:py-24">
+  <div class="container-max">
+    <div class="mb-12 md:mb-16 text-center">
+      <div class="label mb-3 justify-center flex">Why Raja Roadlines</div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+        <span class="text-gradient">Three decades of</span><br>
+        reliability
+      </h2>
+      <div class="divider divider-center"></div>
+      <p class="text-fg-muted">A trusted name in Maharashtra's freight industry since the 1990s.</p>
     </div>
 
-    <div class="why-grid">
-      <div class="why-item fade-up">
-        <div class="why-icon">📅</div>
-        <div><h4>30+ Years in Business</h4><p>Since the early 1990s — the trusted name for transport brokerage in Chhatrapati Sambhajinagar.</p></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="glass p-6">
+        <div class="text-2xl mb-3">📅</div>
+        <h4 class="font-bold mb-2">30+ Years in Business</h4>
+        <p class="text-sm text-fg-muted">Since the early 1990s — the trusted name for transport brokerage in Chhatrapati Sambhajinagar.</p>
       </div>
-      <div class="why-item fade-up">
-        <div class="why-icon">⚡</div>
-        <div><h4>Fast Vehicle Procurement</h4><p>Our network of fleet owners means we source the right vehicle quickly — even during peak month-end demand.</p></div>
+      <div class="glass p-6">
+        <div class="text-2xl mb-3">⚡</div>
+        <h4 class="font-bold mb-2">Fast Vehicle Procurement</h4>
+        <p class="text-sm text-fg-muted">Our network of fleet owners means we source the right vehicle quickly — even during peak month-end demand.</p>
       </div>
-      <div class="why-item fade-up">
-        <div class="why-icon">📄</div>
-        <div><h4>Full Documentation</h4><p>LR generation, E-Way Bills, delivery confirmations — all handled so your accounts team never has to follow up.</p></div>
+      <div class="glass p-6">
+        <div class="text-2xl mb-3">📄</div>
+        <h4 class="font-bold mb-2">Full Documentation</h4>
+        <p class="text-sm text-fg-muted">LR generation, E-Way Bills, delivery confirmations — all handled so your accounts team never has to follow up.</p>
       </div>
-      <div class="why-item fade-up">
-        <div class="why-icon">🏭</div>
-        <div><h4>Diverse Fleet &amp; Load Types</h4><p>ODC, trailers, containers, Eicher, part loads — we match the right vehicle to every load type.</p></div>
+      <div class="glass p-6">
+        <div class="text-2xl mb-3">🏭</div>
+        <h4 class="font-bold mb-2">Diverse Fleet & Load Types</h4>
+        <p class="text-sm text-fg-muted">ODC, trailers, containers, Eicher, part loads — we match the right vehicle to every load type.</p>
       </div>
-      <div class="why-item fade-up">
-        <div class="why-icon">🇮🇳</div>
-        <div><h4>Pan-India Network</h4><p>We arrange freight for destinations across Maharashtra, Gujarat and all over India.</p></div>
+      <div class="glass p-6">
+        <div class="text-2xl mb-3">🇮🇳</div>
+        <h4 class="font-bold mb-2">Pan-India Network</h4>
+        <p class="text-sm text-fg-muted">We arrange freight for destinations across Maharashtra, Gujarat and all over India.</p>
       </div>
-      <div class="why-item fade-up">
-        <div class="why-icon">✅</div>
-        <div><h4>Registered &amp; Compliant</h4><p>GSTIN active, Udyam registered. Proper GST invoices and full E-Way Bill compliance on every load.</p></div>
+      <div class="glass p-6">
+        <div class="text-2xl mb-3">✅</div>
+        <h4 class="font-bold mb-2">Registered & Compliant</h4>
+        <p class="text-sm text-fg-muted">GSTIN active, Udyam registered. Proper GST invoices and full E-Way Bill compliance on every load.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-sep"></div>
-
-<!-- ── COVERAGE STRIP ── -->
-<section class="section-sm">
-  <div class="container">
-    <div class="coverage-strip fade-up">
-      <div>
-        <span class="label">Coverage</span>
-        <h3 style="margin-top:8px;">We move freight <span style="color:var(--accent)">across India</span></h3>
-        <p style="font-size:13px;margin-top:4px;">Operating from CSN (Maharashtra) with expanding presence in Vapi (Gujarat).</p>
-        <div class="coverage-tags">
-          <span class="tag">Aurangabad / CSN</span>
-          <span class="tag">Pune</span>
-          <span class="tag">Mumbai</span>
-          <span class="tag">Vapi / Gujarat</span>
-          <span class="tag">Nashik</span>
-          <span class="tag">All India</span>
-        </div>
-      </div>
-      <a href="coverage.html" class="btn btn-primary" style="flex-shrink:0;">View Coverage →</a>
     </div>
   </div>
 </section>
@@ -234,70 +245,80 @@
 <div class="section-sep"></div>
 
 <!-- ── CTA ── -->
-<section class="cta-section">
-  <div class="container">
-    <span class="label">Get In Touch</span>
-    <h2 style="margin-top:8px;"><span class="text-gradient">Need a vehicle today?</span></h2>
-    <p>Call or WhatsApp us. We respond fast — even on weekends.</p>
-    <div class="cta-btns">
-      <a href="tel:9326055414" class="btn btn-primary">📞 9326055414</a>
-      <a href="https://wa.me/919326055414?text=Hello%2C%20I%20need%20a%20transport%20quote%20from%20Raja%20Roadlines" target="_blank" class="btn btn-green">💬 WhatsApp</a>
-      <a href="tel:9146013298" class="btn btn-secondary">📞 9146013298</a>
+<section class="py-16 md:py-24 text-center">
+  <div class="container-max">
+    <div class="label mb-3 justify-center flex">Get In Touch</div>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+      <span class="text-gradient">Need a vehicle today?</span>
+    </h2>
+    <p class="text-fg-muted mb-8 max-w-2xl mx-auto">Call or WhatsApp us. We respond fast — even on weekends.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-3">
+      <a href="tel:9326055414" class="btn-primary">📞 9326055414</a>
+      <a href="https://wa.me/919326055414?text=Hello%2C%20I%20need%20a%20transport%20quote%20from%20Raja%20Roadlines" target="_blank" class="btn-green">💬 WhatsApp</a>
+      <a href="tel:9146013298" class="btn-secondary">📞 9146013298</a>
     </div>
   </div>
 </section>
 
 <!-- ── FOOTER ── -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
+<footer class="border-t border-border py-12 md:py-16">
+  <div class="container-max">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <!-- About -->
       <div>
-        <div class="footer-logo">
-          <div class="logo-mark" data-size="42"></div>
-          <div class="footer-logo-text">
-            <div class="name">RAJA ROADLINES</div>
-            <div class="sub">Leading Transport Contractors · All Over India</div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="logo-mark w-8 h-8" data-size="32"></div>
+          <div>
+            <div class="font-bold text-sm">RAJA ROADLINES</div>
+            <div class="text-xs text-fg-muted">Transport Contractors</div>
           </div>
         </div>
-        <p class="footer-about">Commission agents and fleet owners serving industrial and commercial clients across India since the 1990s. Based in Chhatrapati Sambhajinagar, Maharashtra.</p>
-        <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
-          <span class="badge">GSTIN ✓</span>
-          <span class="badge">Udyam MSME ✓</span>
-          <span class="badge">E-Way Bill ✓</span>
+        <p class="text-sm text-fg-muted mb-4">ODC, trailer, container and Eicher freight specialists. Export, import and residential relocation handled end-to-end. Based in CSN, serving all India since the 1990s.</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="badge text-xs">GSTIN ✓</span>
+          <span class="badge text-xs">Udyam MSME ✓</span>
         </div>
       </div>
+
+      <!-- Links -->
       <div>
-        <div class="footer-heading">Quick Links</div>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="coverage.html">Coverage</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <div class="font-bold mb-4">Quick Links</div>
+        <ul class="space-y-2 text-sm text-fg-muted">
+          <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+          <li><a href="services.html" class="hover:text-accent transition">Services</a></li>
+          <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
+          <li><a href="coverage.html" class="hover:text-accent transition">Coverage</a></li>
+          <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
         </ul>
       </div>
+
+      <!-- Contact -->
       <div>
-        <div class="footer-heading">Contact</div>
-        <ul class="footer-contact">
+        <div class="font-bold mb-4">Contact</div>
+        <ul class="space-y-2 text-sm text-fg-muted">
           <li>📍 Plot No.151, Gali No.6, Pundalik Nagar, Gankneta, Aurangabad – 431009</li>
-          <li>📞 <a href="tel:9326055414" style="color:var(--fg-muted);">9326055414</a></li>
-          <li>📞 <a href="tel:9146013298" style="color:var(--fg-muted);">9146013298</a></li>
-          <li>✉️ <a href="mailto:rajaroadlinesaurangabad@gmail.com" style="color:var(--fg-muted);">rajaroadlinesaurangabad@gmail.com</a></li>
+          <li>📞 <a href="tel:9326055414" class="hover:text-accent transition">9326055414</a></li>
+          <li>📞 <a href="tel:9146013298" class="hover:text-accent transition">9146013298</a></li>
+          <li>✉️ <a href="mailto:rajaroadlinesaurangabad@gmail.com" class="hover:text-accent transition">rajaroadlinesaurangabad@gmail.com</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+
+    <div class="border-t border-border pt-8 text-center text-sm text-fg-muted">
       <p>© 2025 Raja Roadlines. All rights reserved. Subject to Aurangabad Jurisdiction.</p>
-      <div class="footer-badges">
-        <span class="badge">GSTIN Active</span>
-        <span class="badge">Udyam Registered</span>
-      </div>
     </div>
   </div>
 </footer>
 
-</div><!-- /site-wrapper -->
+</div><!-- /relative z-10 -->
+
 <script src="js/logo.js"></script>
-<script src="js/main.js"></script>
+<script>
+  // Mobile menu toggle
+  document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
