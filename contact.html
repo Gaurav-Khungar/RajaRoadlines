@@ -8,128 +8,157 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<div class="ambient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
-<div class="site-wrapper">
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <div class="nav-logo"><div class="logo-mark" data-size="38"></div></div>
-      <div class="nav-brand-text">
-        <div class="name">RAJA ROADLINES</div>
-        <div class="tag1">Leading Transport Contractors · Commission Agent &amp; Fleet Owners</div>
-        <div class="tag2">ODC · Trailer · Container · Eicher · Part Loads · All Over India</div>
+<div class="fixed inset-0 overflow-hidden pointer-events-none">
+  <div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div><div class="blob blob-4"></div>
+</div>
+
+<div class="relative z-10">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-40 backdrop-blur-md border-b border-border bg-bg-base/80">
+  <div class="container-max py-4">
+    <div class="flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="logo-mark w-10 h-10 flex-shrink-0" data-size="40"></div>
+        <div class="hidden sm:block"><div class="font-bold text-sm text-fg">RAJA ROADLINES</div><div class="text-xs text-fg-muted">ODC · Trailer · Container · Eicher</div></div>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-fg hover:text-accent">Home</a>
+        <a href="services.html" class="text-fg hover:text-accent">Services</a>
+        <a href="about.html" class="text-fg hover:text-accent">About</a>
+        <a href="coverage.html" class="text-fg hover:text-accent">Coverage</a>
+        <a href="contact.html" class="text-accent font-semibold">Contact</a>
+        <a href="tel:9326055414" class="btn-primary text-sm">📞 9326055414</a>
       </div>
-    </a>
-    <div class="nav-links">
-      <a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a>
-      <a href="coverage.html">Coverage</a><a href="contact.html">Contact</a>
-      <a href="tel:9326055414" class="nav-cta">📞 9326055414</a>
+      <button id="mobile-menu-btn" class="md:hidden p-2"><span class="block w-5 h-0.5 bg-fg mb-1.5"></span><span class="block w-5 h-0.5 bg-fg mb-1.5"></span><span class="block w-5 h-0.5 bg-fg"></span></button>
     </div>
-    <div class="hamburger"><span></span><span></span><span></span></div>
-  </div>
-  <div class="mobile-menu">
-    <a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a>
-    <a href="coverage.html">Coverage</a><a href="contact.html">Contact</a>
-    <a href="tel:9326055414" style="color:var(--accent);font-weight:700;">📞 9326055414</a>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border pt-4 space-y-3">
+      <a href="index.html" class="block text-fg">Home</a><a href="services.html" class="block text-fg">Services</a><a href="about.html" class="block text-fg">About</a><a href="coverage.html" class="block text-fg">Coverage</a><a href="contact.html" class="block text-accent font-semibold">Contact</a><a href="tel:9326055414" class="block btn-primary text-center text-sm w-full">📞 Call Now</a>
+    </div>
   </div>
 </nav>
 
-<section class="page-hero">
-  <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> <span>Contact</span></div>
-    <span class="label">Reach Us</span>
-    <h1 style="margin-top:8px;"><span class="text-gradient">Get in Touch</span></h1>
+<!-- HERO -->
+<section class="py-12 md:py-16 border-b border-border">
+  <div class="container-max">
+    <div class="text-sm text-fg-muted mb-4"><a href="index.html">Home</a> <span>›</span> <span>Contact</span></div>
+    <div class="label mb-3">Reach Us</div>
+    <h1 class="text-4xl md:text-5xl font-bold mb-4"><span class="text-gradient">Get in Touch</span></h1>
     <div class="divider"></div>
-    <p style="max-width:480px;font-size:15px;">Call us, WhatsApp us, or send an enquiry. We respond fast — usually within the hour.</p>
+    <p class="text-fg-muted max-w-2xl">Call us, WhatsApp us, or send an enquiry. We respond fast — usually within the hour.</p>
   </div>
 </section>
 
-<!-- Quick dial buttons -->
-<section class="section-sm" style="border-bottom:1px solid var(--border);">
-  <div class="container">
-    <div style="display:flex;gap:14px;flex-wrap:wrap;">
-      <a href="tel:9326055414" class="btn btn-primary" style="flex:1;min-width:180px;font-size:15px;padding:16px 24px;">📞 9326055414</a>
-      <a href="tel:9146013298" class="btn btn-secondary" style="flex:1;min-width:180px;font-size:15px;padding:16px 24px;">📞 9146013298</a>
-      <a href="https://wa.me/919326055414?text=Hello%2C%20I%20need%20a%20transport%20quote%20from%20Raja%20Roadlines" target="_blank" class="btn btn-green" style="flex:1;min-width:180px;font-size:15px;padding:16px 24px;">💬 WhatsApp</a>
-      <a href="mailto:rajaroadlinesaurangabad@gmail.com" class="btn btn-secondary" style="flex:1;min-width:180px;font-size:15px;padding:16px 24px;">✉️ Email Us</a>
+<!-- QUICK CONTACT BUTTONS -->
+<section class="py-8 border-b border-border">
+  <div class="container-max">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+      <a href="tel:9326055414" class="btn-primary text-center py-3 px-4">📞 9326055414</a>
+      <a href="tel:9146013298" class="btn-secondary text-center py-3 px-4">📞 9146013298</a>
+      <a href="https://wa.me/919326055414?text=Hello%2C%20I%20need%20a%20transport%20quote%20from%20Raja%20Roadlines" target="_blank" class="btn-green text-center py-3 px-4">💬 WhatsApp</a>
+      <a href="mailto:rajaroadlinesaurangabad@gmail.com" class="btn-secondary text-center py-3 px-4">✉️ Email Us</a>
     </div>
   </div>
 </section>
 
-<!-- Contact grid -->
-<section class="section">
-  <div class="container">
-    <div class="contact-grid">
+<!-- CONTACT SECTION -->
+<section class="py-16 md:py-24 border-b border-border">
+  <div class="container-max">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-      <!-- Info -->
-      <div class="fade-up">
-        <span class="label">Our Details</span>
-        <h2 style="margin-top:8px;margin-bottom:8px;"><span class="text-gradient">Contact information</span></h2>
+      <!-- LEFT: INFO -->
+      <div>
+        <div class="label mb-3">Our Details</div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="text-gradient">Contact information</span></h2>
         <div class="divider"></div>
-        <p style="margin-bottom:32px;font-size:14px;">For urgent freight requirements, calling is fastest. We're available on WhatsApp too.</p>
+        <p class="text-fg-muted mb-8">For urgent freight requirements, calling is fastest. We're available on WhatsApp too.</p>
 
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📍</div>
-          <div><h4>Office Address</h4><p>Plot No.151, Gali No.6, Pundalik Nagar,<br/>Gankneta, Aurangabad – 431009, Maharashtra</p></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📞</div>
-          <div><h4>Primary Phone</h4><a href="tel:9326055414">9326055414</a></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📞</div>
-          <div><h4>Alternate Phone</h4><a href="tel:9146013298">9146013298</a></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">💬</div>
-          <div><h4>WhatsApp</h4><a href="https://wa.me/919326055414" target="_blank">+91 9326055414</a></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">✉️</div>
-          <div><h4>Email</h4><a href="mailto:rajaroadlinesaurangabad@gmail.com">rajaroadlinesaurangabad@gmail.com</a></div>
+        <!-- Contact Items -->
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="text-2xl flex-shrink-0">📍</div>
+            <div>
+              <h4 class="font-bold mb-1">Office Address</h4>
+              <p class="text-sm text-fg-muted">Plot No.151, Gali No.6, Pundalik Nagar, Gankneta, Aurangabad – 431009, Maharashtra</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="text-2xl flex-shrink-0">📞</div>
+            <div>
+              <h4 class="font-bold mb-1">Primary Phone</h4>
+              <a href="tel:9326055414" class="text-accent hover:text-accent-light">9326055414</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="text-2xl flex-shrink-0">📞</div>
+            <div>
+              <h4 class="font-bold mb-1">Alternate Phone</h4>
+              <a href="tel:9146013298" class="text-accent hover:text-accent-light">9146013298</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="text-2xl flex-shrink-0">💬</div>
+            <div>
+              <h4 class="font-bold mb-1">WhatsApp</h4>
+              <a href="https://wa.me/919326055414" target="_blank" class="text-accent hover:text-accent-light">+91 9326055414</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="text-2xl flex-shrink-0">✉️</div>
+            <div>
+              <h4 class="font-bold mb-1">Email</h4>
+              <a href="mailto:rajaroadlinesaurangabad@gmail.com" class="text-accent hover:text-accent-light break-all">rajaroadlinesaurangabad@gmail.com</a>
+            </div>
+          </div>
         </div>
 
         <!-- Compliance -->
-        <div class="card" style="margin-top:8px;padding:20px;">
-          <div class="label" style="margin-bottom:12px;">Registration &amp; Compliance</div>
-          <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--fg-muted);">
-            <div>✅ <strong style="color:var(--fg);">GSTIN</strong> — Active &amp; Verified</div>
-            <div>✅ <strong style="color:var(--fg);">Udyam (MSME)</strong> — Registered</div>
-            <div>✅ <strong style="color:var(--fg);">E-Way Bill</strong> — Compliant</div>
-            <div>✅ <strong style="color:var(--fg);">Jurisdiction</strong> — Subject to Aurangabad</div>
+        <div class="glass p-6 mt-8">
+          <div class="label mb-4">Registration &amp; Compliance</div>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center gap-2"><span class="text-green-400">✅</span><span><span class="font-bold text-fg">GSTIN</span> — Active &amp; Verified</span></div>
+            <div class="flex items-center gap-2"><span class="text-green-400">✅</span><span><span class="font-bold text-fg">Udyam (MSME)</span> — Registered</span></div>
+            <div class="flex items-center gap-2"><span class="text-green-400">✅</span><span><span class="font-bold text-fg">E-Way Bill</span> — Compliant</span></div>
+            <div class="flex items-center gap-2"><span class="text-green-400">✅</span><span><span class="font-bold text-fg">Jurisdiction</span> — Subject to Aurangabad</span></div>
           </div>
         </div>
       </div>
 
-      <!-- Form -->
-      <div class="form-card fade-up">
-        <span class="label">Enquiry Form</span>
-        <h3 style="margin-top:8px;margin-bottom:24px;">Send an Enquiry</h3>
-        <form class="contact-form" action="/api/contact" method="POST">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Your Name *</label>
-              <input type="text" id="name" name="name" placeholder="Rajesh Sharma" required/>
+      <!-- RIGHT: FORM -->
+      <div class="glass p-8">
+        <div class="label mb-3">Enquiry Form</div>
+        <h3 class="text-2xl font-bold mb-6">Send an Enquiry</h3>
+        <form class="space-y-6" action="/api/contact" method="POST">
+
+          <!-- Name & Company -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-fg-muted mb-2">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Rajesh Sharma" required class="w-full bg-bg-surface border border-border rounded px-3 py-2 text-sm text-fg placeholder-fg-muted focus:outline-none focus:ring-1 focus:ring-accent"/>
             </div>
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" id="company" name="company" placeholder="ABC Industries"/>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="phone">Phone / WhatsApp *</label>
-              <input type="tel" id="phone" name="phone" placeholder="9876543210" required/>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@company.com"/>
+            <div>
+              <label for="company" class="block text-sm font-medium text-fg-muted mb-2">Company</label>
+              <input type="text" id="company" name="company" placeholder="ABC Industries" class="w-full bg-bg-surface border border-border rounded px-3 py-2 text-sm text-fg placeholder-fg-muted focus:outline-none focus:ring-1 focus:ring-accent"/>
             </div>
           </div>
-          <div class="form-group">
-            <label for="service">Service Required</label>
-            <select id="service" name="service">
+
+          <!-- Phone & Email -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="phone" class="block text-sm font-medium text-fg-muted mb-2">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" placeholder="9876543210" required class="w-full bg-bg-surface border border-border rounded px-3 py-2 text-sm text-fg placeholder-fg-muted focus:outline-none focus:ring-1 focus:ring-accent"/>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-fg-muted mb-2">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" class="w-full bg-bg-surface border border-border rounded px-3 py-2 text-sm text-fg placeholder-fg-muted focus:outline-none focus:ring-1 focus:ring-accent"/>
+            </div>
+          </div>
+
+          <!-- Service -->
+          <div>
+            <label for="service" class="block text-sm font-medium text-fg-muted mb-2">Service Required</label>
+            <select id="service" name="service" class="w-full bg-bg-surface border border-border rounded px-3 py-2 text-sm text-fg focus:outline-none focus:ring-1 focus:ring-accent">
               <option value="">— Select —</option>
               <option>ODC / Over-Dimensional Cargo</option>
               <option>Trailer / Multi-Axle</option>
@@ -142,26 +171,28 @@
               <option>Other / Not Sure</option>
             </select>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="from">From (Origin)</label>
-              <input type="text" id="from" name="from_location" placeholder="Aurangabad"/>
+
+          <!-- Origin & Destination -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="from" class="block text-sm font-medium text-fg-muted mb-2">From (Origin)</label>
+              <input type="text" id="from" name="from_location" placeholder="Aurangabad" class="w-full bg-bg-surface border border-border rounded px-3 py-2 text-sm text-fg placeholder-fg-muted focus:outline-none focus:ring-1 focus:ring-accent"/>
             </div>
-            <div class="form-group">
-              <label for="to">To (Destination)</label>
-              <input type="text" id="to" name="to_location" placeholder="Mumbai / Vapi / Delhi"/>
+            <div>
+              <label for="to" class="block text-sm font-medium text-fg-muted mb-2">To (Destination)</label>
+              <input type="text" id="to" name="to_location" placeholder="Mumbai / Vapi / Delhi" class="w-full bg-bg-surface border border-border rounded px-3 py-2 text-sm text-fg placeholder-fg-muted focus:outline-none focus:ring-1 focus:ring-accent"/>
             </div>
           </div>
-          <div class="form-group">
-            <label for="message">Details / Requirements</label>
-            <textarea id="message" name="message" placeholder="Tell us about your load, quantity, timeline or any other details…"></textarea>
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="block text-sm font-medium text-fg-muted mb-2">Details / Requirements</label>
+            <textarea id="message" name="message" placeholder="Tell us about your load, quantity, timeline or any other details…" rows="4" class="w-full bg-bg-surface border border-border rounded px-3 py-2 text-sm text-fg placeholder-fg-muted focus:outline-none focus:ring-1 focus:ring-accent"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;font-size:15px;padding:14px;">
-            Send Enquiry →
-          </button>
-          <p style="font-size:11px;text-align:center;margin-top:10px;color:var(--fg-subtle);">
-            We'll get back within 24 hours. For urgent bookings — call directly.
-          </p>
+
+          <!-- Submit -->
+          <button type="submit" class="w-full btn-primary py-3 font-medium">Send Enquiry →</button>
+          <p class="text-xs text-center text-fg-subtle">We'll get back within 24 hours. For urgent bookings — call directly.</p>
         </form>
       </div>
 
@@ -169,37 +200,21 @@
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo"><div class="logo-mark" data-size="42"></div><div class="footer-logo-text"><div class="name">RAJA ROADLINES</div><div class="sub">Leading Transport Contractors · All Over India</div></div></div>
-        <p class="footer-about">ODC, trailer, container and Eicher freight specialists. Export, import and residential relocation handled end-to-end. Based in CSN, serving all India since the 1990s.</p>
-        <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;"><span class="badge">GSTIN ✓</span><span class="badge">Udyam MSME ✓</span></div>
-      </div>
-      <div>
-        <div class="footer-heading">Quick Links</div>
-        <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About Us</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact</a></li></ul>
-      </div>
-      <div>
-        <div class="footer-heading">Contact</div>
-        <ul class="footer-contact">
-          <li>📍 Plot No.151, Gali No.6, Pundalik Nagar, Gankneta, Aurangabad – 431009</li>
-          <li>📞 <a href="tel:9326055414" style="color:var(--fg-muted);">9326055414</a></li>
-          <li>📞 <a href="tel:9146013298" style="color:var(--fg-muted);">9146013298</a></li>
-          <li>✉️ <a href="mailto:rajaroadlinesaurangabad@gmail.com" style="color:var(--fg-muted);">rajaroadlinesaurangabad@gmail.com</a></li>
-        </ul>
-      </div>
+<!-- FOOTER -->
+<footer class="border-t border-border py-12 md:py-16">
+  <div class="container-max">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div><div class="flex items-center gap-2 mb-4"><div class="logo-mark w-8 h-8" data-size="32"></div><div><div class="font-bold text-sm">RAJA ROADLINES</div><div class="text-xs text-fg-muted">Transport Contractors</div></div></div><p class="text-sm text-fg-muted mb-4">ODC, trailer, container and Eicher freight specialists. Export, import and residential relocation handled end-to-end. Based in CSN, serving all India since the 1990s.</p><div class="flex gap-2 flex-wrap"><span class="badge text-xs">GSTIN ✓</span><span class="badge text-xs">Udyam MSME ✓</span></div></div>
+      <div><div class="font-bold mb-4">Quick Links</div><ul class="space-y-2 text-sm text-fg-muted"><li><a href="index.html" class="hover:text-accent">Home</a></li><li><a href="services.html" class="hover:text-accent">Services</a></li><li><a href="about.html" class="hover:text-accent">About Us</a></li><li><a href="coverage.html" class="hover:text-accent">Coverage</a></li><li><a href="contact.html" class="hover:text-accent">Contact</a></li></ul></div>
+      <div><div class="font-bold mb-4">Contact</div><ul class="space-y-2 text-sm text-fg-muted"><li>📍 Plot No.151, Gali No.6, Pundalik Nagar, Gankneta, Aurangabad – 431009</li><li>📞 <a href="tel:9326055414" class="hover:text-accent">9326055414</a></li><li>📞 <a href="tel:9146013298" class="hover:text-accent">9146013298</a></li><li>✉️ <a href="mailto:rajaroadlinesaurangabad@gmail.com" class="hover:text-accent">rajaroadlinesaurangabad@gmail.com</a></li></ul></div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Raja Roadlines. All rights reserved. Subject to Aurangabad Jurisdiction.</p>
-      <div class="footer-badges"><span class="badge">GSTIN Active</span><span class="badge">Udyam Registered</span></div>
-    </div>
+    <div class="border-t border-border pt-8 text-center text-sm text-fg-muted"><p>© 2025 Raja Roadlines. All rights reserved. Subject to Aurangabad Jurisdiction.</p></div>
   </div>
 </footer>
 
 </div>
+
 <script src="js/logo.js"></script>
-<script src="js/main.js"></script>
+<script>document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {document.getElementById('mobile-menu')?.classList.toggle('hidden');});</script>
 </body>
 </html>
