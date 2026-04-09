@@ -1333,8 +1333,7 @@ body {
 
 .btn-primary {
   border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(204 34 34 / var(--tw-bg-opacity, 1));
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.75rem;
@@ -1342,14 +1341,15 @@ body {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background, border-color, text-decoration-color, fill, stroke, box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 
 .btn-primary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
 }
 
 .btn-secondary {
@@ -1357,8 +1357,7 @@ body {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(42 42 46 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 15 17 / var(--tw-bg-opacity, 1));
+  background: linear-gradient(135deg, rgba(30, 30, 33, 0.8) 0%, rgba(15, 15, 17, 0.6) 100%);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.75rem;
@@ -1366,22 +1365,20 @@ body {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(237 237 239 / var(--tw-text-opacity, 1));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background, border-color, text-decoration-color, fill, stroke, box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
 .btn-secondary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(204 34 34 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 26 29 / var(--tw-bg-opacity, 1));
+  border-color: rgb(37 99 235 / var(--tw-border-opacity, 1));
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(29, 78, 216, 0.1) 100%);
 }
 
 .btn-green {
   border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.75rem;
@@ -1389,14 +1386,15 @@ body {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background, border-color, text-decoration-color, fill, stroke, box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .btn-green:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(4 120 87 / var(--tw-bg-opacity, 1));
+  background: linear-gradient(135deg, #1ebd5e 0%, #0f8a6d 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .badge {
